@@ -10,6 +10,8 @@ public class CommandApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CommandApplication.class, args);
 
+		System.setProperty("java.awt.headless", "false");
+
 		Editor editor = new Editor();
 		editor.init();
 
