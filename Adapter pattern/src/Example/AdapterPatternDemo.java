@@ -8,6 +8,9 @@ import Example.interfaces.MovableAdapterImpl;
 public class AdapterPatternDemo {
     public static void main(String[] args) {
 
+        /**
+         * Instantiating a movable object and a movable object adapter
+         */
         Movable bugattiVeyron = new BugattiVeyron();
 
         MovableAdapter bugattiVeyronAdapter = new MovableAdapterImpl(bugattiVeyron);
