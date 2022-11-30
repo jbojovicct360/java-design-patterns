@@ -7,7 +7,7 @@ import java.awt.*;
 public class Demo {
 
     static int CANVAS_SIZE = 500;
-    static int TREES_TO_DRAW = 1000000;
+    static int TREES_TO_DRAW = 10000000;
     static int TREE_TYPES = 3;
 
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Demo {
         System.out.println(TREES_TO_DRAW + " trees drawn");
         System.out.println("---------------------");
         System.out.println("Memory usage:");
-        System.out.println("Tree size (8 bytes- 2 ints) * " + TREES_TO_DRAW);
+        System.out.println("Tree size (8 bytes - 2 ints) * " + TREES_TO_DRAW);
         System.out.println("+ TreeTypes size (~30 bytes - 2 Strings and a Color) * " + TREE_TYPES + "");
         System.out.println("---------------------");
         System.out.println("Total: " + ((TREES_TO_DRAW * 8 + TREE_TYPES * 30) / 1024 / 1024) +

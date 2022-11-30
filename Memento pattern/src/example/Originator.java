@@ -1,5 +1,8 @@
 package example;
 
+/**
+ * Originator class
+ */
 public class Originator {
 
     private String state;
